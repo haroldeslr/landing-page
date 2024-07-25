@@ -6,6 +6,10 @@
 
 a {
     text-decoration: none;
+}
+
+.text-container p,
+a, button {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -22,11 +26,14 @@ body {
 .section2,
 .section3,
 .section4 {
-    padding: 0px 60px;
+    padding: 0px 130px;
 }
 
 body .section1 {
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
 }
 
 .navbar .logo {
@@ -40,7 +47,50 @@ body .section1 {
     align-items: center;
 }
 
+.navbar,
+.hero-container {
+    margin-bottom: 100px;
+}
+
 .navbar ul {
     display: flex;
     gap: 20px;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-container {
+    display: flex;
+    gap: 36px;
+}
+
+.text-container,
+.image-container {
+    flex: 1;
+}
+
+.image-container {
+    color: white;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: baseline;
+}
+
+button {
+    padding: 6px 20px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    border: none;
 }
